@@ -1,0 +1,17 @@
+<footer class="footer">
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="logo" />
+    </div>
+    <div class="footer-group">
+        <app-render
+        *ngFor="let item of component.footerGroup"
+        [componentType]="mappingService.getComponentType(item)"
+        [componentInjector]="mappingService.getComponentInjector(item)"
+        class="footer-group__item"
+        >
+        </app-render>
+    </div>
+    <div class="copyright">
+        Copyright © 2023 - now Fabian Graml
+    </div>
+</footer>

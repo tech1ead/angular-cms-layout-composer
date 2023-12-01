@@ -1,0 +1,10 @@
+<div class="footer-group__item"> 
+    <h1 class="title">{{component.fields.title}}</h1>
+    <app-render
+    *ngFor="let item of component.fields.footerItems"
+    [componentType]="mappingService.getComponentType(item)"
+    [componentInjector]="mappingService.getComponentInjector(item)"
+    class="footer-item"
+    >
+    </app-render>
+</div>

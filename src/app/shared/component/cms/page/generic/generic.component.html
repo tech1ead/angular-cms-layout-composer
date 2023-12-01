@@ -1,0 +1,11 @@
+<ng-container *ngIf="(pageContent$ | async) as pageContent">
+    <ng-container *ngIf="layoutComponentType">
+      <app-render 
+        [componentType]="layoutComponentType" 
+        [componentInjector]="componentInjector(pageContent)">
+      </app-render>
+    </ng-container>
+    <ng-container *ngIf="!layoutComponentType">
+      <p>Invalid layout type.</p>
+    </ng-container>
+  </ng-container>

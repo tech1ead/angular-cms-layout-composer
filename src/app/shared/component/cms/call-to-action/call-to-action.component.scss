@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+.cta-container {
+  position: relative;
+  background-color: #f3f9fc;
+  color: #000;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin: 0 30px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.cta-container::before,
+.cta-container::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.cta-container::before {
+  width: 300px;
+  height: 300px;
+  top: -50px;
+  left: -150px;
+}
+
+.cta-container::after {
+  width: 200px;
+  height: 200px;
+  bottom: -50px;
+  right: -100px;
+}
+  
+.cta-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.cta-subtitle {
+  font-family: 'Source Code Pro', monospace; 
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  font-family: 'Source Code Pro', monospace; 
+  display: inline-block;
+  font-size: 1.2em;
+  color: white;
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  height: 25px;
+  width: 300px;
+}

@@ -1,0 +1,10 @@
+<header>
+    <nav>
+        <app-render
+        *ngFor="let item of component.headerItems"
+        [componentType]="mappingService.getComponentType(item)"
+        [componentInjector]="mappingService.getComponentInjector(item)"
+      >
+      </app-render>
+    </nav>
+</header>

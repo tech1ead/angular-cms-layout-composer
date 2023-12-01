@@ -1,0 +1,7 @@
+<ng-container *ngFor="let component of pageContent.components">
+    <div class="spacing" *ngIf="getComponentType(component.sys.contentType.sys.id) as componentType">
+      <app-render [componentType]="componentType"
+                  [componentInjector]="componentInjector(component.fields)">
+      </app-render>
+    </div>
+  </ng-container>
