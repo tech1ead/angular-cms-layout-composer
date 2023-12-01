@@ -49,9 +49,6 @@ Layout Composer is specifically designed to address business needs in web develo
 - `GenericComponent` determines the layout type using `LayoutMappingService`.
 - Components are rendered dynamically, with each receiving its data through Angular's `Injector`.
 
-### Example Component - Call to Action
-Demonstrates a specific component structure and data reception through Angular's dependency injection.
-
 For any questions or further information, feel free to contact me at [fabian.graml03@gmail.com].
 
 Layout Composer - Bridging Angular and Contentful for innovative web development.
